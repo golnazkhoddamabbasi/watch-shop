@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="watch.css">
+    <title>watch</title>
+</head>
+<body>
+    <header>
+        <div>
+            <figure>
+ <img src="img/pngfind.com-rolex-logo-png-1539850.png" alt="">
+            </figure>
+        </div>
+        <nav>
+ <ul>
+     <li><a href="">about us</a></li>
+     <li><a href="">products</a></li>
+     <li><a href="">contact us</a></li>
+     <li><a href="">my account</a></li>
+ </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="text">
+            <h2 id="model">Seamaster Diver </h2>
+            <p>swiss made</p>
+           <button>
+               buy now
+           </button>
+
+
+        </section>
+        <section class="imag">
+            <figure>
+                <img src="img/pngfind.com-watch-png-1204498.png" alt="" id="slid">
+            </figure> 
+          
+
+        </section >
+
+
+
+        <section class="watch">
+            <div id="w1" class="item">
+                <figure>
+                    <img src="img/pngfind.com-watch-png-1204498.png" alt="">
+                </figure>
+                <p>314$</p>
+
+            </div>
+            <div  id="w2"class="item">
+                <figure>
+                    <img src="img/pngfind.com-watches-png-images-5639826.png" alt="">
+                </figure> 
+                <p>225$</p>
+            </div>
+            <div  id="w3"class="item">
+                <figure>
+                    <img src="img/pngfind.com-diamond-watch-png-4755764.png" alt="">
+                </figure> 
+                <p>361$</p>
+            </div>
+
+  <div id="w4" class="item">
+                <figure>
+                         <img src="img/pngfind.com-watch-png-1204498.png" alt="">
+                </figure> 
+                <p>411$</p>
+            </div>
+            <div id="w5" class="item">
+                    <figure>
+                             <img src="img/pngfind.com-watch-hands-png-3164211.png" alt="">
+                    </figure> 
+                    <p>291$</p>
+                </div>
+
+
+
+        </section>
+
+
+
+
+    </main>
+</body>
+<script>
+    let text = document.getElementById('model')
+    let fig = document.getElementById('slid')
+    let w1 = document.getElementById('w1')
+    let w2 = document.getElementById('w2')
+    let w3 = document.getElementById('w3')
+    let w4 = document.getElementById('w4')
+    let w5 = document.getElementById('w5')
+
+    let _one = {
+        pic : 'img/pngfind.com-watch-png-1204498.png',
+        tit: 'Seamaster Diver'
+    }
+    let _two = {
+        pic : 'img/pngfind.com-watches-png-images-5639826.png',
+        tit: 'Superocean Heritage'
+    }
+    let _three = {
+        pic : 'img/pngfind.com-diamond-watch-png-4755764.png',
+        tit: 'Santos De Cartier'
+    }
+    let _four = {
+        pic : 'img/pngfind.com-watch-png-1204498.png',
+        tit: 'Black Fifty-Eight'
+    }
+    let _five = {
+        pic : 'img/pngfind.com-watch-hands-png-3164211.png',
+         tit: 'TAG HEUER'
+    }
+    w1.addEventListener('click',()=>{
+    text.innerText = _one.tit;
+    fig.src = _one.pic; 
+    })
+    w2.addEventListener('click',()=>{
+    text.innerText = _two.tit;
+    fig.src = _two.pic; 
+    })
+    w3.addEventListener('click',()=>{
+    text.innerText = _three.tit;
+    fig.src = _three.pic; 
+    })
+    w4.addEventListener('click',()=>{
+    text.innerText = _four.tit;
+    fig.src = _four.pic; 
+    })
+    w5.addEventListener('click',()=>{
+    text.innerText = _five.tit;
+    fig.src = _five.pic; 
+    })
+
+
+
+
+</script>
+</html>
